@@ -16,8 +16,9 @@ const plans = [
       "Dashboard personalizado"
     ],
     popular: false,
-    buttonText: "Começar Teste Grátis",
-    buttonVariant: "outline" as const
+  buttonText: "Começar Agora",
+  buttonVariant: "outline" as const,
+  whatsappMsg: "Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20B%C3%A1sico%20do%20NodeX%20e%20gostaria%20de%20saber%20mais!"
   },
   {
     name: "Profissional",
@@ -35,8 +36,9 @@ const plans = [
       "API completa"
     ],
     popular: true,
-    buttonText: "Começar Teste Grátis",
-    buttonVariant: "hero" as const
+  buttonText: "Começar Agora",
+  buttonVariant: "hero" as const,
+  whatsappMsg: "Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20Profissional%20do%20NodeX%20e%20gostaria%20de%20saber%20mais!"
   },
   {
     name: "Premium",
@@ -54,8 +56,9 @@ const plans = [
       "Compliance avançado"
     ],
     popular: false,
-    buttonText: "Falar com Especialista",
-    buttonVariant: "secondary" as const
+  buttonText: "Começar Agora",
+  buttonVariant: "secondary" as const,
+  whatsappMsg: "Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20Premium%20do%20NodeX%20e%20gostaria%20de%20saber%20mais!"
   }
 ];
 
@@ -111,12 +114,19 @@ const PricingSection = () => {
                     <span className="text-muted-foreground">/{plan.period}</span>
                   </div>
 
-                  <Button 
-                    variant={plan.buttonVariant} 
-                    size="lg" 
+                  <Button
+                    variant={plan.buttonVariant}
+                    size="lg"
                     className="w-full mb-6"
+                    asChild
                   >
-                    {plan.buttonText}
+                    <a
+                      href={`https://wa.me/559991463832?text=${plan.whatsappMsg}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {plan.buttonText}
+                    </a>
                   </Button>
                 </div>
 
