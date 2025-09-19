@@ -108,10 +108,18 @@ const BenefitsSection = () => {
               Junte-se a mais de 500 empresas que já transformaram seus resultados
             </h3>
             <p className="text-muted-foreground mb-6">
-              Comece seu teste gratuito hoje mesmo e veja a diferença em 48 horas.
+              Comece hoje mesmo e veja a diferença em 48 horas.
             </p>
-            <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg">
-              Iniciar Teste Gratuito de 14 Dias
+            <button
+              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg"
+              onClick={() => {
+                const section = document.getElementById("plans");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              Iniciar Agora
             </button>
           </div>
         </div>

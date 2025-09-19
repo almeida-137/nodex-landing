@@ -28,7 +28,7 @@ const CtaSection = () => {
             </h2>
             
             <p className="text-xl lg:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-              Comece agora mesmo seu teste gratuito e descubra porque empresas 
+              Comece agora mesmo e descubra porque empresas 
               inteligentes escolhem o NodeX para crescer mais rápido.
             </p>
           </div>
@@ -36,9 +36,15 @@ const CtaSection = () => {
           {/* CTA Button */}
           <div className="mb-12">
             <Button 
-              variant="cta" 
-              size="xl" 
+              variant="cta"
+              size="xl"
               className="group text-lg px-12 py-6"
+              onClick={() => {
+                const section = document.getElementById("plans");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
               Começar Teste Grátis Agora
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
@@ -48,8 +54,8 @@ const CtaSection = () => {
           {/* Trust Indicators */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-white mb-2">14 dias</div>
-              <div className="text-white/70">Teste grátis completo</div>
+              <div className="text-3xl font-bold text-white mb-2">24/7</div>
+              <div className="text-white/70">Atendimento especializado</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="text-3xl font-bold text-white mb-2">48h</div>

@@ -61,7 +61,7 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="plans" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
@@ -72,7 +72,7 @@ const PricingSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-            Escolha o plano ideal para sua empresa. Todos incluem teste gratuito de 14 dias.
+            Escolha o plano ideal para sua empresa.
           </p>
           
           {/* Discount Banner */}
@@ -145,7 +145,7 @@ const PricingSection = () => {
         {/* Bottom Info */}
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
-            Todos os planos incluem 14 dias grátis e 30% de desconto no 1º ano
+            Todos os planos incluem 30% de desconto no 1º ano
           </p>
           <div className="flex flex-wrap gap-8 justify-center text-sm text-muted-foreground">
             <div className="flex items-center gap-2">

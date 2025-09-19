@@ -18,10 +18,11 @@ const Footer = () => {
     ]
   };
 
+  // Redes sociais: LinkedIn e Facebook comentados, Instagram ativo
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Facebook, href: "#", label: "Facebook" }
+    // { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/nodex_sistemas/", label: "Instagram" },
+    // { icon: Facebook, href: "#", label: "Facebook" }
   ];
 
   return (
@@ -45,13 +46,13 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-white/70">contato@nodex.com.br</span>
+                <span className="text-white/70">contato@sistemanodex.com.br</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
                   <Phone className="w-4 h-4" />
                 </div>
-                <span className="text-white/70">(11) 99999-9999</span>
+                <span className="text-white/70">(99) 9146-3832</span>
               </div>
             </div>
           </div>
@@ -111,7 +112,7 @@ const Footer = () => {
               })}
             </div>
 
-            {/* Newsletter Signup */}
+            {/*
             <div className="space-y-3">
               <p className="text-white/70 text-sm">
                 Receba novidades e dicas de gestão empresarial
@@ -127,6 +128,7 @@ const Footer = () => {
                 </button>
               </div>
             </div>
+            */}
           </div>
         </div>
       </div>

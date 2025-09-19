@@ -2,6 +2,14 @@ import { Button } from "@/components/ui/button";
 import dashboardMockup from "@/assets/dashboard-mockup.jpg";
 
 const HeroSection = () => {
+
+  const scrollToPlans = () => {
+    const section = document.getElementById("plans");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden">
       {/* Background Pattern */}
@@ -28,13 +36,13 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="xl" className="group">
-                Começar Teste Grátis
+              <Button onClick={scrollToPlans} variant="hero" size="xl" className="group">
+                Começar Agora
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Button>
-              <Button variant="hero-outline" size="xl">
+              <Button onClick={scrollToPlans} variant="hero-outline" size="xl">
                 Ver Planos
               </Button>
             </div>
@@ -42,11 +50,11 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start pt-8">
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-white">500+</div>
+                <div className="text-3xl font-bold text-white">200+</div>
                 <div className="text-white/70">Empresas Ativas</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-white">98%</div>
+                <div className="text-3xl font-bold text-white">97%</div>
                 <div className="text-white/70">Satisfação</div>
               </div>
               <div className="text-center lg:text-left">

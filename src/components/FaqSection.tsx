@@ -101,12 +101,14 @@ const FaqSection = () => {
               Nossa equipe está pronta para ajudar você a encontrar a solução perfeita para sua empresa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-105">
+              <a
+                href="https://wa.me/559991463832?text=Ol%C3%A1%2C%20vi%20o%20site%20do%20NodeX%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-105 flex items-center justify-center"
+              >
                 Falar com Especialista
-              </button>
-              <button className="px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                Agendar Demo
-              </button>
+              </a>
             </div>
           </div>
         </div>
